@@ -1,0 +1,27 @@
+node_modules/
+.DS_Store
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.log
+/inputs/*
+!/inputs/README.md
+/work/
+/skill-versions/
+/reference-library/*
+!/reference-library/typography/
+!/reference-library/analysis/
+# 中文字体体积过大（单可变字体 20M+），不纳入版本库；
+# 本地保留即可运行，需要共享时另行外部化（同 node_modules 思路）。
+/reference-library/typography/fonts/
+/dist/
+/artifacts/
+/playwright-report/
+/test-results/
+
+# 运行环境不放在项目里：见 .env-root / MW_ENV_ROOT 指向的公共环境目录。
+/node_modules
+/.venv/
+/.runtime/

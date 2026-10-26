@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md",
+    "README.zh-CN.md",
+    "AGENTS.md",
+    ".gitignore",
+    ".gitattributes",
+    "package.json",
+    "package-lock.json",
+    "mw-serve.mjs",
+    "mw-release.config.json",
+    "inputs/README.md",
+    "mw-start.command",
+    "mw-start.bat"
+  ],
+  "directories": [
+    ".agents",
+    "scripts",
+    "tests",
+    "docs",
+    "reference-library/typography",
+    "reference-library/analysis"
+  ]
+}

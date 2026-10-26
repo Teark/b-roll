@@ -1,0 +1,26 @@
+{
+  "name": "b-roll",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node mw-serve.mjs",
+    "setup": "node scripts/mw-setup.mjs",
+    "doctor": "node scripts/mw-doctor.mjs",
+    "read-stage": "node scripts/mw-read-stage.mjs",
+    "test": "node scripts/mw-test.mjs",
+    "smoke": "node scripts/mw-smoke.mjs",
+    "package:check": "node scripts/mw-package-release.mjs --check",
+    "package:release": "node scripts/mw-package-release.mjs",
+    "onboard": "node scripts/mw-bootstrap.mjs",
+    "matte": "node scripts/mw-matte.mjs",
+    "matting:smoke": "node scripts/mw-matting-smoke.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.0",
+    "playwright-core": "1.63.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
