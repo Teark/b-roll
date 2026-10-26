@@ -13,8 +13,7 @@ __pycache__/
 /reference-library/*
 !/reference-library/typography/
 !/reference-library/analysis/
-# 中文字体体积过大（单可变字体 20M+），不纳入版本库；
-# 本地保留即可运行，需要共享时另行外部化（同 node_modules 思路）。
+# 中文字体体积过大（单可变字体 20M+），不纳入版本库，作为本地资产保留。
 /reference-library/typography/fonts/
 /dist/
 /artifacts/

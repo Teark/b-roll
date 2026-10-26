@@ -27,13 +27,7 @@ A 100-second "ten things Doubao can do" talking-head film, produced end to end:
 
 ### 1. Start
 
-All you need is **Node.js 22+ and WorkBuddy**. Double-click `mw-start.bat` on Windows or `mw-start.command` on macOS, or run:
-
-```sh
-node scripts/mw-bootstrap.mjs
-```
-
-It prepares dependencies, the Python environment, Chromium, FFmpeg and the matting model, then self-checks and runs a short matting pass. Everything lives in a shared environment root named by `.env-root` — nothing is written into the project and nothing is installed system-wide; on a machine that is already set up this step only verifies. If it fails, see the [step-by-step guide](docs/mw-getting-started.md).
+Double-click `mw-start.bat` on Windows or `mw-start.command` on macOS.
 
 ### 2. Hand over the material
 
@@ -45,17 +39,6 @@ Put the footage and its complete SRT into `inputs/`, open the whole folder in Wo
 
 The finished MP4 and its preview are ordinary local files — open them directly, no server needed. Output lives in `work/<film>/`: `render/film.mp4` is the film, `film/` is the project source. `node mw-serve.mjs` is only for browsing pages under `work/` in a browser.
 
-<details>
-<summary>Verify it yourself</summary>
-
-```sh
-npm run doctor -- --matting   # matting environment
-npm test                      # rule manifests and toolchain
-npm run smoke                 # one real Three.js → H.264 render
-```
-
-</details>
-
 ## Layout
 
 | Path | Contents |
@@ -63,6 +46,6 @@ npm run smoke                 # one real Three.js → H.264 render
 | `.agents/skills/srt-brief/` | Analysis Skill: reads the SRT, splits it into chapters, writes `PLAN.md` + `timeline.json` |
 | `.agents/skills/motion-forge/` | Production Skill: rules and tools for motion, typography, sound and rendering |
 | `scripts/` | Install, diagnostics, matting, frame capture, package checks |
-| `reference-library/` | 43 case breakdowns + 8 open-source typefaces |
+| `reference-library/` | 43 case breakdowns + 10 open-source typefaces |
 
 MIT licensed. Third-party components (Three.js, playwright-core, FFmpeg, the RVM matting model, the bundled fonts) keep their own upstream licences.

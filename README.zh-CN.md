@@ -27,13 +27,7 @@
 
 ### 1. 启动
 
-只需要 **Node.js 22+ 与 WorkBuddy**。Windows 双击 `mw-start.bat`，macOS 双击 `mw-start.command`；也可以直接运行：
-
-```sh
-node scripts/mw-bootstrap.mjs
-```
-
-它会准备依赖、Python 环境、Chromium、FFmpeg 与人物抠像模型，然后自检并试跑一小段抠像。运行环境统一放在公共目录（见 `.env-root`），不写进项目，也不污染系统；本机已装好时这一步只做检查。装不上看[逐步安装指南](docs/mw-getting-started.md)。
+Windows 双击 `mw-start.bat`，macOS 双击 `mw-start.command`。
 
 ### 2. 交素材
 
@@ -45,17 +39,6 @@ node scripts/mw-bootstrap.mjs
 
 成片和预览都是普通本地文件，直接打开即可，不需要启动任何服务。产物在 `work/<片名>/`：`render/film.mp4` 是成片，`film/` 是工程源码。需要浏览器访问 `work/` 下的页面时，才用 `node mw-serve.mjs`。
 
-<details>
-<summary>想自己验一遍</summary>
-
-```sh
-npm run doctor -- --matting   # 抠像环境
-npm test                      # 规则清单与工具链
-npm run smoke                 # 一次真实 Three.js → H.264 渲染
-```
-
-</details>
-
 ## 目录
 
 | 路径 | 内容 |
@@ -63,6 +46,6 @@ npm run smoke                 # 一次真实 Three.js → H.264 渲染
 | `.agents/skills/srt-brief/` | 分析 Skill：读 SRT、拆章节，产出 `PLAN.md` + `timeline.json` |
 | `.agents/skills/motion-forge/` | 制作 Skill：动效、排版、声音、渲染的规则与工具 |
 | `scripts/` | 安装、环境诊断、抠像、截帧、打包校验 |
-| `reference-library/` | 43 个案例拆解 + 8 个开源字体 |
+| `reference-library/` | 43 个案例拆解 + 10 个开源字体 |
 
 MIT 许可。第三方组件（Three.js、playwright-core、FFmpeg、RVM 抠像模型、字体）保留各自的上游许可。
