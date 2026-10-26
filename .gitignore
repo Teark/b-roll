@@ -25,3 +25,5 @@ __pycache__/
 /node_modules
 /.venv/
 /.runtime/
+# 本地项目记忆/数据，不入库
+/.workbuddy/
