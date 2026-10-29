@@ -5,8 +5,8 @@
     ".agents/skills/motion-forge/SKILL.md",
     ".agents/skills/srt-brief/SKILL.md"
   ],
-  "updatedAt": "2026-10-26",
-  "policy": "保留原版完整运动方法；人物保留原背景不描边、换背景才描边（宽度按显示尺寸换算，小圆头像改用容器边缘分离）；人物卡片必须3D悬浮并二次居中构图；平台安全区由一条派生线控制全部下沿尺寸；字体扩展真实候选；分阶段读取与完整视听交付。",
+  "updatedAt": "2026-10-29",
+  "policy": "保留原版完整运动方法；人物保留原背景不描边、换背景才描边（宽度按显示尺寸换算，小圆头像改用容器边缘分离）；人物卡片必须3D悬浮并二次居中构图；平台安全区由一条派生线控制全部下沿尺寸；字体扩展真实候选；分阶段读取与完整视听交付。SRT 序号后标【不加】的时间段不新增 B-roll、不切镜，边界需收束与恢复，并写入分析产物的排除区间供验收核对。",
   "fileHashes": {
     "motion-forge/SKILL.md": "b257b4193ad53e1ec9f68110e5d06946bc54a5e852d704308446be941437f5f3",
     "motion-forge/agents/openai.yaml": "d1ba68c6365b419f09ab3c1f69d004a6c8239347651ac7d4ff7c0cbdfd1f529c",
@@ -31,7 +31,7 @@
     "motion-forge/references/mf-production-foundations.md": "aeffd480c85aa48355a1085ac8dcb9a587ed7de6bf9432a5c696991129c9f17b",
     "motion-forge/references/mf-scene-craft.md": "0199974dd1ad7b284afaa8d53c4cb81f6aa537bb7de618a1afd27d66e4ee743b",
     "motion-forge/references/mf-screen-score.md": "9fe4b6ff4b3771174c96c40e4b1d6f8c2328d4d2b5d890ccf34295f4cb182f97",
-    "motion-forge/references/mf-sequence-rhythm.md": "5c749da88940dbf97076bffecef508f66516002332a295bce4e39be7131fd997",
+    "motion-forge/references/mf-sequence-rhythm.md": "5a9c864031a2e4943c43bb4b91c9a28507cdb43282d37514e54193e05e915689",
     "motion-forge/references/mf-sources.md": "b5fb3b05e6b40fb46a5ce81b5acc87de89b7380fc0eda0918dc5614f0bdd43be",
     "motion-forge/references/mf-space-camera.md": "3bbec1139067b0127ee4ab3f46aea99772407c7b2927e6cbfc9eca1bf97ad8e2",
     "motion-forge/references/mf-stage-reading.json": "b37d9a52ef694f7b02fbf1ef9893ffda3d96a25eb6ef83800e06f3b0a458c195",
@@ -46,7 +46,7 @@
     "motion-forge/references/mf-typography-cjk-latin.md": "820d208ad9e369a80cc6dbd76bcc1f93e412626bb4c4ff78c47fea601646a0d2",
     "motion-forge/references/mf-typography-poster-pairings.md": "6b513d54bf32cc47877627a2298b73f27dedd7aaed513d6b0cb7db58215797a7",
     "motion-forge/references/mf-ui-surface-adapter.md": "8fc6e549c4d93543054b3715ab17699a0e6ec24133d8c09e83649e8ff2127b5c",
-    "motion-forge/references/mf-verification.md": "78b334c5fd1574ebf5eda122aedfce8f648a2185239e1a2baad9d2a5037af99c",
+    "motion-forge/references/mf-verification.md": "16963ccc2760fac6c5489da85a2520e4ca66225fbab9609a584e4c4c9065acb5",
     "motion-forge/references/mf-visual-decisions.md": "8d7723b1c2c881e4e8b400cd2e3f8bffd9b0df6751eddb32c483ef53fb920abe",
     "motion-forge/scripts/mf-find-motion-resources.py": "f2871755116ba785f907361301a74b7ba8b8e6a2d079965296fcf8f37572d31a",
     "motion-forge/scripts/mf-frame-math.mjs": "4960dcdfb6b91e02dd5aff20eb04a663a7918c0f1c46d7d1b72e7afe29daa047",
@@ -57,18 +57,18 @@
     "motion-forge/scripts/mf-test-handoff-math.mjs": "6bd6b56f9fc6890196a0827f1673e7e8f479295665f29c5fb2762df4990bdab1",
     "motion-forge/scripts/mf-three-frame.mjs": "ca59908829547512394a1bb3f85d17de48f0e28b232f649c818b8d6bd89094d1",
     "motion-forge/scripts/mf-ui-surface.mjs": "a05e1367a3024c1d5b3fdb9b103cb5b846f93c52de9c1c1243c50ecdf5d29fa3",
-    "srt-brief/SKILL.md": "04c69331b6bb2e628d5da764e6c46b84fe54316ce22e414e5d5b2d6d7f16c896",
+    "srt-brief/SKILL.md": "fb37c6f498e4bde083be1776e5cddf404eab54ad890a4a7eb5a9fb6620032a0e",
     "srt-brief/agents/openai.yaml": "cdbdea75e664e902fa0c81a72ee4900c81c009ceabdb47834060fe6e1e2c0f74",
     "srt-brief/references/sb-opening-design.md": "cf87f1f35bacb8dedb8e502845d854a53613f97653d55082cf0496be7cad2fce",
-    "srt-brief/references/sb-packaging-pattern-selection.md": "b264eb3d3f6592c28ce238cc128076c4f506ec948af9400c59a23859a20a21b3",
+    "srt-brief/references/sb-packaging-pattern-selection.md": "8863309d4d6cda676fc9c4b9c3e1ad670e22f56dd5859149b547a794770b030b",
     "srt-brief/references/sb-production-foundations.md": "c4a8e451c712c809c9f028b149a72fc835f64e603fe06a04d44d21f13a0072dc",
     "srt-brief/references/sb-production.md": "27e11a19de15c7dcfef263a19fe1f8d13a86a8e60ba254afc2ca88abcf824a24",
     "srt-brief/references/sb-reference-and-assets.md": "acbe5a907fef504bf527ef0f71f86511703f01ba1a108925c1023dd14a20807d",
-    "srt-brief/references/sb-semantic-planning.md": "6e63eced2653dcd6f050fcbf5b22b399dcb43e6e05a05aa553da8569eff1b863",
+    "srt-brief/references/sb-semantic-planning.md": "7ccb9eca11f1a070211b0feac406174af8c49661a4769be9134c02283647cede",
     "srt-brief/references/sb-talking-head-lessons.md": "1a3cfbd70e61b0243ee4f2ef10b0e0c06e995b6ead85efb8ab17c2d6a26c4f07"
   },
   "revision": {
-    "version": "20261026-renamed-v4",
+    "version": "20261029-srt-no-broll-marker-v5",
     "baseline": "20260919-original-spatial-type-v1"
   }
 }
